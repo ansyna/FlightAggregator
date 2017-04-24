@@ -8,15 +8,17 @@ case class Flight(dofM: String, dofW: String, carrier: String, tailnum: String, 
 
 object FlightParser {
   def main(args: Array[String]) {
-    findShortDistBetweenFlights("DFW","JDK")
+    //"DFW" and "JDK"
+    findShortDistBetweenFlights(11298, 12478)
   }
 
-  def findShortDistBetweenFlights(v1StrArg: String, v2StrArg: String) {
+  def findShortDistBetweenFlights(v1: Long, v2: Long) {
     val conf = new SparkConf().setAppName("Simple Application")
     val sc = new SparkContext(conf)
     val rootLogger = Logger.getRootLogger()
     rootLogger.setLevel(Level.ERROR)
-    val textRDD = sc.textFile("/home/hanna/Downloads/flightDataSimpl.csv")
+
+    val textRDD = sc.textFile("resources/flightDataSimpl.csv")
 
     val flightsRDD = textRDD.map(parseFlight).cache()
 
@@ -40,8 +42,6 @@ object FlightParser {
     //Defining the Graph
     val graph = Graph(airports, edges)
 
-    val v1: Long = 12478
-    val v2: Long = 11298
     val v1Str = airportMap(v1)
     val v2Str = airportMap(v2)
     println(s"Flight from $v2Str (id $v2) to $v1Str (id $v1)")
