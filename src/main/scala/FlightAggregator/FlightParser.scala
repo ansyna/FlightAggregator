@@ -13,12 +13,12 @@ object FlightParser {
   }
 
   def findShortDistBetweenFlights(v1: Long, v2: Long) {
-    val conf = new SparkConf().setAppName("Simple Application")
+    val conf = new SparkConf().setAppName("Flight parser")
     val sc = new SparkContext(conf)
     val rootLogger = Logger.getRootLogger()
     rootLogger.setLevel(Level.ERROR)
 
-    val textRDD = sc.textFile("resources/flightDataSimpl.csv")
+    val textRDD = sc.textFile("resources/flightDataSmall.csv")
 
     val flightsRDD = textRDD.map(parseFlight).cache()
 

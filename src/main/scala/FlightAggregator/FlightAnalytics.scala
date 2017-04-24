@@ -9,9 +9,9 @@ object FlightAnalytics {
   }
 
   def fligthAnalysis() {
-    val conf = new SparkConf().setAppName("Simple Application")
+    val conf = new SparkConf().setAppName("Flight analytics")
     val sc = new SparkContext(conf)
-    val textRDD = sc.textFile("/home/hanna/Downloads/flightDataSimple.csv")
+    val textRDD = sc.textFile("resources/flightData.csv")
     print(textRDD.first())
     val flightsRDD = textRDD.map(parseFlight).cache()
     print(flightsRDD.first())

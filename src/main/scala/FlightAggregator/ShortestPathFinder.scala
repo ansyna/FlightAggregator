@@ -15,7 +15,7 @@ import org.apache.log4j.{Level, Logger}
       val sc = new SparkContext(conf)
       val rootLogger = Logger.getRootLogger()
       rootLogger.setLevel(Level.ERROR)
-      val textRDD = sc.textFile("/home/hanna/Downloads/flightDataSimpl.csv")
+      val textRDD = sc.textFile("resources/flightData.csv")
       print(textRDD.first())
       val flightsRDD = textRDD.map(parseFlight).cache()
       print(flightsRDD.first())
@@ -38,7 +38,7 @@ import org.apache.log4j.{Level, Logger}
       val v1 = 12478
       val v2 = 12173
       val result = ShortPathLibrary.run(graph, Seq(v2))
-      result.vertices.foreach(println)
+      //result.vertices.foreach(println)
 
       // val result = ShortestPaths.run(graph, Seq(v2))
       //result.vertices.foreach(println)
@@ -49,6 +49,7 @@ import org.apache.log4j.{Level, Logger}
         .first                                // there's only one value
         ._2                                   // the result is a tuple (v1, Map)
         .get(v2)                              // we get its shortest path to v2 as an Option object
+
       shortestPath.foreach(println) // will be 2 for this case as (12478,Map(12173 -> 2))
     }
 
