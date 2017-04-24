@@ -1,0 +1,45 @@
+<component name="libraryTable">
+  <library name="SBT: org.scala-lang:scala-library:2.11.11:jar" type="Scala">
+    <properties>
+      <compiler-classpath>
+        <root url="file://$USER_HOME$/.ivy2/cache/jline/jline/jars/jline-2.14.3.jar" />
+        <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar" />
+        <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.5.jar" />
+        <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.11.jar" />
+        <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.11.jar" />
+        <root url="file://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.11.jar" />
+      </compiler-classpath>
+    </properties>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.11.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/spark-core_2.11-2.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-hdfs-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-annotations-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-mapreduce-client-common-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-yarn-client-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-common-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-auth-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-yarn-server-web-proxy-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-mapreduce-client-core-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-yarn-api-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-mapreduce-client-shuffle-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-yarn-server-common-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-mapreduce-client-app-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-mapreduce-client-jobclient-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/hadoop-yarn-common-2.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars/spark-sql_2.11-2.1.0.jar!/" />
+      <root url="file://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars" />
+      <root url="jar://$USER_HOME$/temp/spark-assembly_2.10-1.6.0-cdh5.11.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-csv_2.11-1.5.0.jar!/" />
+      <root url="jar://$USER_HOME$/temp/graphframes-0.4.0-spark2.1-s_2.11.jar!/" />
+      <root url="jar://$USER_HOME$/temp/spark-hive_2.11-2.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.11-sources.jar!/" />
+      <root url="file://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/temp/spark-2.1.0/assembly/target/scala-2.11/jars" recursive="false" type="SOURCES" />
+  </library>
+</component>
